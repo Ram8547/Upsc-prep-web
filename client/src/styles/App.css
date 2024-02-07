@@ -1,0 +1,205 @@
+/* client/src/Homepage.css */
+
+/* Styling the navigation bar  */
+header {
+  
+  background-color: #007bff; 
+  color: #fff;
+  padding: 20px ;
+  max-width: 100%;
+  margin-bottom: 0px;
+  
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #007bff; /* Changed the background color */
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: hwb(0 100% 0%);
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: hwb(0 6% 94%); /* Hover color */
+}
+
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header-button {
+  background-color: hsl(12, 92%, 46%);
+  color: hwb(235 3% 13%);
+  border: none;
+  padding: 25px ;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 500px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-left: 10px;
+}
+
+.header-button:hover {
+  background-color: #f54748; /* Hover color */
+ 
+}
+
+
+/* Styling the hero section */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: hsl(0, 83%, 55%);
+  text-align: center;
+  padding:50px; /* Increased the padding for a more spacious feel */
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 2.5rem; /* Increased font size for emphasis */
+  margin-bottom: 0px; /* Increased margin for spacing */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Increased text shadow for depth */
+  letter-spacing: 2px;
+  animation: fade-in 3s ease-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero p {
+  font-size: 2rem; /* Increased font size for readability */
+  margin-bottom: 50px; /* Increased margin for spacing */
+  text-shadow: 2px 2px 4px hsla(248, 88%, 43%, 0.3); /* Enhanced text shadow */
+  animation: slide-up 1s ease-out;
+  border-radius: 100px;
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero button {
+  background-color: hsl(137, 100%, 71%);
+  color: #fff;
+  border: none;
+  padding: 180px 400px; /* Increased padding for a larger button */
+  font-size: 8.2rem; /* Slightly reduced font size for better button appearance */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced box shadow */
+  animation: fade-in 1s ease-out;
+}
+
+.hero button:hover {
+  background-color: hsl(219, 90%, 62%); /* Hover color */
+}
+
+
+/* Styling the features section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f10a0a;
+  padding: 100px 0; /* Increased padding for better separation */
+}
+
+.feature {
+  text-align: center;
+  max-width: 400px; /* Increased max width for larger feature boxes */
+  background-color: #f1e904;
+  padding: 45px;
+  border-radius: 100px; /* Increased border radius for rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px); /* Hover effect: Slight upward movement */
+}
+
+
+
+.feature h3 {
+  font-size: 1.8rem; /* Increased font size for emphasis */
+  margin: 20px 0;
+  color: #0c0c0c;
+}
+
+.feature p {
+  font-size: 1.4rem; /* Increased font size for better readability */
+  color: #050505;
+}
+
+/* Styling the footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  padding: 20px 0; /* Increased padding for a more substantial footer */
+  color: #fff;
+}
+
+footer p {
+  font-size: 1.2rem; /* Increased font size for better visibility */
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  color: #fff;
+}

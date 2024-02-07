@@ -1,0 +1,32 @@
+/* styles/Notes.css (or any other appropriate CSS file) */
+
+/* Notes.js styles */
+.Notes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  .Notes-box { background-color: #ff6b6b; /* Coral Red */
+    color: #1a1a1d; /* Dark Charcoal */
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Notes-box:hover {
+    background-color: #bc6ff1; /* Light Purple */
+  }
+  
+  /* Add more specific styles as needed */
+  

@@ -1,0 +1,69 @@
+/* styles/course.css */
+
+.subject-box {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 30px auto; /* Center the box horizontally */
+    width: 50%;
+    border-radius: 100px;
+    text-align: center;
+    box-shadow: 10px 4px 8px #f313131a;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 20px;
+    color: #111010;
+    margin-bottom: 80px;
+    padding: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.subject-box a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.subject-box.history {
+    background-color: #ffc107; /* Amber background for History course */
+}
+
+.subject-box.polity {
+    background-color: hsl(122, 74%, 72%); /* Green background for Polity course */
+}
+
+.subject-box.science {
+    background-color: hsl(207, 79%, 65%); /* Blue background for Science course */
+}
+
+.subject-box.ethics {
+    background-color: #ff8d6b; /* Deep Orange background for Ethics course */
+}
+
+.subject-box.optional {
+    background-color: hsl(291, 73%, 71%); /* Purple background for Optional Subject course */
+}
+
+.subject-box.previous {
+    background-color: #f44336; /* Red background for Previous Year Questions course */
+}
+
+.subject-box.economy {
+    background-color: #13e7a4; /* Blue Grey background for Economy course */
+}
+
+.subject-box.geography {
+    background-color: #d6e80d; /* Brown background for Geography course */
+}
+
+.subject-box.syllabus {
+    background-color: #03a9f4; /* Light Blue background for UPSC Syllabus course */
+}
+
+.subject-box.current {
+    background-color: #e30edc; /* Red background for Current Affairs course */
+}

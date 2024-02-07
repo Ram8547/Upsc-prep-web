@@ -1,0 +1,39 @@
+/* styles/App.css (or any other appropriate CSS file) */
+
+/* Videos.js styles */
+.teacher-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  .teacher-box {
+    background-color: #6bdcff; /* Coral Red */
+    color: #010101; /* Dark Charcoal */
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .teacher-box:hover {
+    background-color: #ff5252; /* Lighter Red */
+    color: white;
+  }
+  
+  .teacher-box p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Add any other specific styles for the video content inside each teacher's box */
+  

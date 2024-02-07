@@ -1,0 +1,104 @@
+/* styles/ChatGPT.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9e789;
+  }
+  
+  .chat-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f78080;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .chat-history {
+    height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .message {
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    max-width: 70%;
+  }
+  
+  .user {
+    background-color: #4caf50;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-self: flex-end;
+  }
+  
+  .bot {
+    background-color: #3498db;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  form {
+    padding: 20px;
+    display: flex;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 15px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Typing animation for bot messages */
+  .bot .message:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3498db;
+    animation: typing 1s infinite;
+    margin-top: 10px;
+  }
+  
+  @keyframes typing {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-10px);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
